@@ -1,0 +1,23 @@
+cat << 'EOF' >> .gitignore
+# Ignore secrets and SSH
+.aws/
+.ssh/
+
+# Ignore system history & caches
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.cache/
+.viminfo
+.wget-hsts
+.lesshst
+.Xauthority
+
+# Ignore Terraform state & cache secrets
+.terraform/
+.terraform.d/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+EOF
